@@ -1,14 +1,14 @@
 {% set version = "1.7" %}
 package:
-  name: conda-bash-completion
+  name: bash-completion-conda
   version: "{{ version }}"
 
 source:
   git_rev: "{{ version }}"
-  git_url: https://github.com/antonioshadji/conda-bash-completion
+  git_url: https://github.com/antonioshadji/bash-completion-conda
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -24,7 +24,7 @@ test:
       - bash -e conda
 
 about:
-  home: https://github.com/tartansandal/conda-bash-completion
+  home: https://github.com/antonioshadji/bash-completion-conda
   license: GPL3
   license_file: LICENSE
   summary: "Bash completion for the conda commmand."
